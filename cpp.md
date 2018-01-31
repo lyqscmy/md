@@ -1,3 +1,10 @@
+# (Google C++ Style Guide)[https://google.github.io/styleguide/cppguide.html]
+
+- Style rules should pull their weight
+  四两拨千斤
+- Optimize for the reader, not the writer
+  易于阅读意味易于推导
+
 ## [How to mix C and C++](https://isocpp.org/wiki/faq/mixing-c-and-cpp)
 
 典型情况:
