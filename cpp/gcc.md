@@ -1,10 +1,14 @@
+# book and sites
+
+(manual)[https://gcc.gnu.org/onlinedocs/]
+
 ## intrinsics
 
 https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
 
 https://software.intel.com/sites/landingpage/IntrinsicsGuide/#
 
-<https://gcc.gnu.org/onlinedocs/>
+
 
 -Wall
 
