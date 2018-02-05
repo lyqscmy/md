@@ -1,4 +1,4 @@
-# (Google C++ Style Guide)[https://google.github.io/styleguide/cppguide.html]
+# [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 
 - Style rules should pull their weight
   四两拨千斤

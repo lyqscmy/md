@@ -1,6 +1,6 @@
 # book and sites
 
-(manual)[https://gcc.gnu.org/onlinedocs/]
+[manual](https://gcc.gnu.org/onlinedocs/)
 
 ## intrinsics
 

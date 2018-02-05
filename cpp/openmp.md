@@ -1,7 +1,11 @@
+[OpenMP](https://computing.llnl.gov/tutorials/openMP/)
+
+[gcc openmp](https://gcc.gnu.org/onlinedocs/gcc-7.3.0/libgomp/)
+
 (OpenMP)[https://en.wikipedia.org/wiki/OpenMP]
 **shared memory** multiprocessing
 
-(gcc openmp)[https://gcc.gnu.org/onlinedocs/gcc-7.3.0/libgomp/]
+
 
 (冯东的批判)[https://www.zhihu.com/question/22347096/answer/240099718]
 

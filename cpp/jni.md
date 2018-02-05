@@ -1,4 +1,4 @@
-https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/jniTOC.html
+[Java Native Interface Specification Contents](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/jniTOC.html)
 
 https://en.wikipedia.org/wiki/Java_Native_Interface
 
