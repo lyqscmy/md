@@ -1,3 +1,6 @@
+# [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#main)
+# [A Tour of C++](https://isocpp.org/tour)
+
 # [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 
 - Style rules should pull their weight
