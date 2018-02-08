@@ -1,3 +1,9 @@
+# 开发环境
+
+- CMake/make
+- gcc
+- vscode
+
 # [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#main)
 # [A Tour of C++](https://isocpp.org/tour)
 

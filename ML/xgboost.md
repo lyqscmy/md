@@ -1,3 +1,16 @@
+# diff
+- Booster.java
+- XGBoostJNI.java
+- xgboost4j.h/xgboost4j.cpp
+- c_api.h/c_api.cc
+
+- learner.cc/learner.cc
+- gbtree.cc
+- predictor.h/cpu_predictor.cpp
+    vivo_predictleaf
+
+
+
 # TODO
 二进制格式兼容加载模型
 提取所需信息

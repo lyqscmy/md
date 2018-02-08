@@ -57,3 +57,4 @@ int x __attribute__ ((aligned (16))) = 0;
 
 ## 静态链接
 
+https://www.ibm.com/developerworks/cn/linux/l-cn-linklib/
