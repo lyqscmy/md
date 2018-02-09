@@ -1,4 +1,5 @@
 [OpenMP](https://computing.llnl.gov/tutorials/openMP/)
+[OpenMP Scheduling](http://cs.umw.edu/~finlayson/class/fall14/cpsc425/notes/12-scheduling.html)
 
 [gcc openmp](https://gcc.gnu.org/onlinedocs/gcc-7.3.0/libgomp/)
 

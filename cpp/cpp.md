@@ -66,3 +66,66 @@
   - global scope
   - block scope
 
+# c_api
+
+- Header Guards
+```cpp
+#pragma once
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+struct yl_task_s;
+typedef struct yl_task_s yl_task_t;
+
+YL_API yl_task_t *yl_task_new();
+YL_API void yl_task_free(yl_task_t *task);
+YL_API int yl_task_is_pending(const yl_task_t *task);
+YL_API void yl_task_tick(yl_task_t *task);
+YL_API const char *yl_task_get_result_string(const yl_task_t *task);
+/* code goes here */
+
+#ifdef __cplusplus
+}
+#endif
+```
+
+```cpp
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#define AS_TYPE(Type, Obj) reinterpret_cast<Type *>(Obj)
+#define AS_CTYPE(Type, Obj) reinterpret_cast<const Type *>(Obj)
+
+yl_task_t *yl_task_new()
+{
+    return AS_TYPE(yl_task_t, new yourlibrary::Task());
+}
+
+void yl_task_free(yl_task_t *task)
+{
+    if (!task)
+        return;
+    delete AS_TYPE(yourlibrary::Task, task);
+}
+
+int yl_task_is_pending(const yl_task_t *task)
+{
+    return AS_CTYPE(yourlibrary::Task, task)->is_pending() ? 1 : 0;
+}
+
+void yl_task_tick(yl_task_t *task)
+{
+    AS_TYPE(yourlibrary::Task, task)->tick();
+}
+
+const char *yl_task_get_result_string(const yl_task_t *task)
+{
+    return AS_CTYPE(yourlibrary::Task, task)->result_string();
+}
+
+#ifdef __cplusplus
+}
+#endif
+```
