@@ -1,3 +1,9 @@
+# 对象指针传递
+long handle
+Booster *bst = static_cast<Booster*>(handle);
+
+
+# sites and books
 [Java Native Interface Specification Contents](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/jniTOC.html)
 
 https://en.wikipedia.org/wiki/Java_Native_Interface

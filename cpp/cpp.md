@@ -1,3 +1,19 @@
+# 内存管理
+## 拷贝，赋值，析构
+编译器默认生成版本不一定可靠（member包含动态内存时）
+## 智能指针
+目的是什么？机制？为什么有用？如何实现？与rust中有何区别？
+[billion-dollar mistake](https://en.wikipedia.org/wiki/Tony_Hoare#Apologies_and_retractions)
+ps:忘记有空指针这回事
+
+- 何时传智能指针，何时传对象？
+[](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/)
+[](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-smartptrparam)
+关键点：structured lifetimes,调用者负责保证参数的lifetime。
+
+## 对象模型
+[Intro to C++ Object Model](https://github.com/CppCon/CppCon2015/tree/master/Presentations/Intro%20to%20C++%20Object%20Model)
+
 # 开发环境
 
 - CMake/make

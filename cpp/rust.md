@@ -1,10 +1,16 @@
+# ownership
+> Ownership is Rust’s most unique feature, and it enables Rust to make memory safety guarantees without needing a garbage collector.
+related features: 
+- borrowing
+- slices
+
 # book and sites
 https://crates.io/
 
 [doc](https://doc.rust-lang.org/)
 
 [the book](https://doc.rust-lang.org/book/second-edition/)
-
+[The Rustonomicon](https://doc.rust-lang.org/nomicon/)
 [*Attribute* ](https://doc.rust-lang.org/reference/attributes.html)
 
 # RFC

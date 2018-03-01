@@ -12,3 +12,6 @@
 
 选技术选最轻量最简洁的
 as simple as possible but not simpler
+
+# 环境变量
+export OMP_NUM_THREADS=8
