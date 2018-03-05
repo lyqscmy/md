@@ -1,6 +1,5 @@
-
-
-
+# alterantive
+[Setting the default JDK with the /usr/sbin/alternatives Utility](https://access.redhat.com/documentation/en-US/JBoss_Enterprise_Web_Platform/5/html/Installation_Guide/sect-use_alternatives_to_set_default_JDK.html)
 
 ```
 FROM debian:jessie

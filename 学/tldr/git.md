@@ -6,12 +6,10 @@ git push -u origin hotfix/readme-update
 [git rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 
 git reset --hard HEAD
-`git log --pretty=format:"%h %s" --graph`
+git log --pretty=format:"%h %s" --graph
 
 git branch iss53
-
-`git checkout iss53`
-
+git checkout iss53
 git checkout -b iss53
 
 ```shell
