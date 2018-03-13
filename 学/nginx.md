@@ -1,3 +1,7 @@
+TAGS:nginx openresty microservice
+
+[Inside NGINX: How We Designed for Performance & Scale](https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/)
+
 [What is Kubernetes?](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
 [nginx](http://aosabook.org/en/nginx.html)
