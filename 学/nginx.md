@@ -24,6 +24,8 @@ TAGS:nginx openresty microservice
 [OpenResty 最佳实践](https://moonbingbing.gitbooks.io/openresty-best-practices/content/)
 [自动为你编程的分布式流量管理软件](https://openresty.com/en/)
 
+
+# [Streaming media](https://www.nginx.com/products/nginx/streaming-media/)
 应用场景
 - content(text/image/video) cache
 - load balancer
