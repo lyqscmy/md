@@ -4,6 +4,11 @@ TAGS:nginx openresty microservice
 
 [What is Kubernetes?](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
+[Event Library](https://redis.io/topics/internals-eventlib)
+
+
+[agentzh's Nginx Tutorials ](https://openresty.org/download/agentzh-nginx-tutorials-en.html)
+
 [nginx](http://aosabook.org/en/nginx.html)
 
 > Nowadays, concurrency is caused by a combination of mobile clients and newer application architectures which are typically based on maintaining a **persistent connection** that allows the client to be updated with news, tweets, friend feeds, and so on. Another important factor contributing to increased concurrency is the changed behavior of modern browsers, which open four to six **simultaneous connections** to a website to improve page load speed.
