@@ -1,3 +1,8 @@
+1. Each **value** in Rust has a **variable** that’s called its owner.
+包括栈和堆的上value
+2. There can only be **one owner at a time**.
+3. When the owner goes out of **scope**, the value will be **dropped**.
+
 ownership
 borrowing
 reference
@@ -13,10 +18,7 @@ JVM的堆内存分配也总是从顶上获取,所以非常快.没有GC的语言�
 
 > Accessing data in the heap is slower than accessing data on the stack because we have to follow a pointer to get there. **Contemporary processors are faster if they jump around less in memory**.
 
-1. Each **value** in Rust has a **variable** that’s called its owner.
-包括栈和堆的上value
-2. There can only be **one owner at a time**.
-3. When the owner goes out of **scope**, the value will be **dropped**.
+
 
 > When a variable goes out of scope, Rust calls a special function for us. This function is called drop, and it’s where the author of String can put the code to return the memory. Rust calls drop automatically at the closing }.
 
