@@ -1,0 +1,1 @@
+[孟岩博客](http://blog.csdn.net/myan?t=1)
