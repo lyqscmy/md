@@ -1,3 +1,21 @@
+# Fearless Concurrency
+> Initially, the Rust team thought that ensuring memory safety and preventing concurrency problems were two separate challenges to be solved with different methods. Over time, they discovered that the ownership and type systems are a powerful set of tools to help in dealing with both memory safety and concurrency problems! By leveraging ownership and type checking, many concurrency errors are compile time errors in Rust, rather than runtime errors.
+
+- threads
+- Message passing
+- Shared state
+
+> In a way, channels in any programming language are sort of like **single ownership**, because once you transfer a value down a channel, you shouldn’t use that value any longer. Shared memory concurrency is sort of like **multiple ownership**: multiple threads can access the same memory location at the same time. As we saw in Chapter 15 where multiple ownership was made possible by smart pointers, multiple ownership can add additional complexity because these different owners need managing.
+
+
+> A mutex is a **concurrency primitive** for sharing memory. It’s short for “mutual exclusion”, as in, it only allows **one thread** to access **some data** at **any given time**. In order to access the data in a mutex, a thread must first signal that it wants access by asking to acquire the mutex’s lock.
+
+> Management of mutexes can be incredibly tricky to get right, and that’s why so many people are enthusiastic about channels.
+
+> Interestingly, the Rust language itself knows very little about concurrency. Almost everything we’ve talked about so far in this chapter has been part of the standard library, not the language. Our concurrency options are not limited to the language or the standard library, meaning we can write our own concurrency options or use ones others have written.
+
+> The Send marker trait indicates that ownership of the type implementing Send may be transferred between threads. Almost every Rust type is Send, but there are some exceptions, including Rc<T>: this cannot be Send because if we cloned an Rc<T> value and tried to transfer ownership of the clone to another thread, both threads might update the reference count at the same time. For this reason, Rc<T> is implemented for use in single-threaded situations where you don’t want to pay the threadsafe performance penalty.
+
 # ownership
 > Ownership is Rust’s most unique feature, and it enables Rust to make memory safety guarantees without needing a garbage collector.
 related features: 

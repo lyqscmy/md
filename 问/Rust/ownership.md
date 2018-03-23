@@ -1,7 +1,15 @@
+TAG:Rust|Ownership|Smart Pointer
 1. Each **value** in Rust has a **variable** that’s called its owner.
 包括栈和堆的上value
 2. There can only be **one owner at a time**.
 3. When the owner goes out of **scope**, the value will be **dropped**.
+
+1. At any given time, you can have either but not both of:
+    - One mutable reference.
+    - Any number of immutable references.
+2. References must always be valid.
+
+> In the majority of cases, ownership is clear: you know exactly which variable owns a given value. However, there are cases when a single value may have multiple owners. For example, in graph data structures, multiple edges may point to the same node, and that node is conceptually owned by all of the edges that point to it. A node shouldn’t be cleaned up unless it doesn’t have any edges pointing to it.
 
 ownership
 borrowing
@@ -41,10 +49,7 @@ copy与move不能共存
 owner所有权能对value做哪些事?drop?
 
 
-1. At any given time, you can have either but not both of:
-    - One mutable reference.
-    - Any number of immutable references.
-2. References must always be valid.
+
 
 slice如何扩展到其他方面?
 
