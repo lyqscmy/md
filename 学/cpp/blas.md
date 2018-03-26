@@ -3,6 +3,7 @@ http://www.netlib.org/blas/#_blas_routines
 https://software.intel.com/en-us/mkl-developer-reference-c
 
 [OpenBLAS项目与矩阵乘法优化](https://www.leiphone.com/news/201704/Puevv3ZWxn0heoEv.html)
+
 [Zhang Xianyi: Introduction to OpenBLAS and BLIS](https://www.youtube.com/watch?v=7fyIqx3v_MQ)
 
 [GEMM: From Pure C to SSE Optimized Micro Kernels](http://apfel.mathematik.uni-ulm.de/~lehn/sghpc/gemm/)
