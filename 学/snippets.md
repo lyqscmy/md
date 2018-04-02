@@ -1,4 +1,9 @@
-timing
+# shebang
+```shell
+#!/usr/bin/env python
+```
+
+# timing
 ```cpp
 #include <chrono>  // for high_resolution_clock
 

@@ -1,3 +1,8 @@
+# debug build
+cmake -G Ninja -DCMAKE_BUILD_TYPE=Debug ..
+ninja -n -v
+
+
 .PHONY: all clean
 CC = gcc
 CCFLAGS = -O3 -Wall -march=native -std=c11

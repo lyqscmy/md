@@ -1,3 +1,4 @@
+tag:python|log
 # sites
 [tutorial](https://docs.python.org/3/tutorial/index.html)
 
@@ -247,3 +248,7 @@ for line in f:
 ```
 
 # [string format](https://pyformat.info/#number_padding)
+
+# log
+switch output by level
+selective in the same level by what?
