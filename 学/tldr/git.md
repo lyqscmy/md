@@ -1,3 +1,6 @@
+**git is a DAG**
+
+
 [The beginner's guide to contributing to a GitHub project](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/#summary)
 
 git pull upstream master && git push origin master
