@@ -17,7 +17,12 @@
 慢慢去体会，时间可能持续很长，不要急于求成。
 
 # 2018/3/31
-[] parse (text) vs deserialize (bin)
+[x] parse (text) vs deserialize (bin)
 如何设计二进制编码？参考protocol buffer和redis协议
 具体编码的数据结构强影响设计
 reids编码的命令和操作数
+
+# 2018/4/8
+[] namespace
+[] cgroups
+[] 容器的创建和运行
