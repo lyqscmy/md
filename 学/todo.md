@@ -23,6 +23,16 @@
 reids编码的命令和操作数
 
 # 2018/4/8
-[] namespace
-[] cgroups
-[] 容器的创建和运行
+[p] namespace
+[p] cgroups
+[x] 容器的创建和运行
+
+# 2018/4/9
+[x] network namespace
+[x] veth pair
+[x] cpu cgroups
+
+# 2018/4/10
+[] TVM
+[] Tensorflow
+

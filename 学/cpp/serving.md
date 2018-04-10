@@ -1,6 +1,14 @@
 # FAQ
-- 一次请求如何服务？多个servable分布在不同节点
-- 并发请求？
+[] 一次请求如何服务？多个servable分布在不同节点
+[] 并发请求？
+[] 输入数据的大小？
+[] 是否有必要做batching增加吞吐量？
+
+
+# 功能
+机器学习在线服务框架需要哪些功能
+- 同一个模型，不同版本
+- 不同模型
 
 # Version Policy
 - Availability Preserving Policy
