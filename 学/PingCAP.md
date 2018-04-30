@@ -1,3 +1,4 @@
+tag:container|k8s
 # 容器资源使用**远程**查看和控制
 
 实验环境：https://www.katacoda.com/courses/kubernetes/playground

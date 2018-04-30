@@ -3,6 +3,10 @@
 #!/usr/bin/env python
 ```
 
+```shell
+#!/bin/sh
+```
+
 # timing
 ```cpp
 #include <chrono>  // for high_resolution_clock
