@@ -1,4 +1,5 @@
-tag:python|log
+tag:python
+
 # sites
 [tutorial](https://docs.python.org/3/tutorial/index.html)
 

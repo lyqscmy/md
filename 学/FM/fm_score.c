@@ -70,3 +70,23 @@ static void saxpy_kernel_16(int n, float *x, float *y, float *alpha)
 }
 
 #endif
+
+static void saxpy_intrinsics(int n, float a, float *x, float *y)
+{
+    int register i = 0;
+    __m256 YMMs0, YMMs1, YMMs2, YMMs3;
+    __m256 YMMa = _mm256_set1_ps(a); // vbroadcastss
+    while (i < n)
+    {
+        __m256 YMMx0 = _mm256_load_ps(x); // vmovups
+        __m256 YMMx1 = _mm256_load_ps(x + 8);
+        __m256 YMMx2 = _mm256_load_ps(x + 16);
+        __m256 YMMx3 = _mm256_load_ps(x + 24);
+        YMMs0 = _mm256_add_ps(YMMs0, _mm256_mul_ps(YMMw0, YMMv)); // vfmadd231ps
+        YMMs1 = _mm256_add_ps(YMMs1, _mm256_mul_ps(YMMw1, YMMv));
+        YMMs2 = _mm256_add_ps(YMMs2, _mm256_mul_ps(YMMw2, YMMv));
+        YMMs3 = _mm256_add_ps(YMMs3, _mm256_mul_ps(YMMw3, YMMv));
+
+        i += 8;
+    }
+}
