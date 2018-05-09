@@ -1,3 +1,12 @@
+tag:cpp
+
+# c++ primer
+
+p204
+> In C++,names have scope,and objects have lifetimes.
+
+
+
 # 内存管理
 ## 拷贝，赋值，析构
 编译器默认生成版本不一定可靠（member包含动态内存时）

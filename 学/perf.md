@@ -12,3 +12,5 @@ perf_events is an event-oriented observability tool, which can help you solve ad
 
 
 perf-stat - Run a command and gather performance counter statistics
+
+- 如何判断一段程序是否存在分支预测瓶颈？

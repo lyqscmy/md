@@ -1,3 +1,8 @@
+# books and sites
+[The Rust Programming Language](https://doc.rust-lang.org/book/second-edition/)
+[读书笔记](读书笔记/rust.md)
+
+
 # Fearless Concurrency
 > Initially, the Rust team thought that ensuring memory safety and preventing concurrency problems were two separate challenges to be solved with different methods. Over time, they discovered that the ownership and type systems are a powerful set of tools to help in dealing with both memory safety and concurrency problems! By leveraging ownership and type checking, many concurrency errors are compile time errors in Rust, rather than runtime errors.
 
