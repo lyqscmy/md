@@ -1,6 +1,7 @@
 # books and sites
 [The Rust Programming Language](https://doc.rust-lang.org/book/second-edition/)
 [读书笔记](读书笔记/rust.md)
+[Abstraction without overhead: traits in Rust](https://blog.rust-lang.org/2015/05/11/traits.html)
 
 
 # Fearless Concurrency
