@@ -1,3 +1,27 @@
+tag:algorithm|data structure
+
+# 数据结构
+[std::collections](https://doc.rust-lang.org/std/collections/index.html)
+- 数组
+- 链表
+- 栈
+- 队列
+- 堆
+- hashtable
+	- map
+	- set
+- 二叉树
+
+## 并发数据结构
+读写锁
+无锁
+
+- concurrentqueue
+M生产者N消费者
+- concurrenthashmap
+缓存
+- skiplist
+
 # 基本算法
 ## 排序
 in-place
@@ -14,11 +38,7 @@ stable
 
 ## 搜索
 
-# 基本数据结构
-## 栈
-## 队列
-## 二叉树
-- 递归
+
 
 # 算法新解
 [《算法新解》作者刘新宇：我只是想打开那些黑盒子，告诉人们里面有什么（图灵访谈）](http://www.ituring.com.cn/article/274001)

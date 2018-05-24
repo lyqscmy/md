@@ -1,4 +1,7 @@
-tag:concurrency
+tag:concurrency|多线程
+
+# book and sites
+http://www.1024cores.net/
 
 > Many languages are strongly opinionated about the solutions they offer for dealing with concurrent problems. For example, Erlang has elegant functionality for message passing concurrency, but only obscure ways to share state between threads. Only supporting a subset of possible solutions is a reasonable strategy for higher-level languages to take, because a higher-level language **promises benefits from giving up some control** in order to gain abstractions. However, lower-level languages are expected to provide the solution with the best performance in any given situation, and have **fewer abstractions over the hardware**. Rust, therefore, gives us a variety of tools for modeling your problems in whatever way is appropriate for your situation and requirements.
 
@@ -24,5 +27,18 @@ Scala actor
 
 # 并发的基本组件
 1. mutex
-2. lock
+2. condition vaiable
 
+
+# lock strategy 
+- sleep
+- spinlock
+
+# deadlock
+
+> The most common strategy is to standardize the lock acquisition sequences so that combinations of inter-dependent locks are always acquired in a specifically defined "cascade" order
+
+# access mode
+- exclusive access
+- intend-to-exclude
+- intend-to-upgrade

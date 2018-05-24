@@ -7,3 +7,7 @@ openresty|Dtrace|lua
 
 [Agner Fog](http://www.agner.org/)
 Cpp Optimizing
+
+[1024cores](http://www.1024cores.net/)
+
+[antirez](http://antirez.com/latest/0)

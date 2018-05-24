@@ -1,3 +1,9 @@
+tag:memory|concurrency
+
+
+[](ebook/cpumemory.pdf)
+[Memory model](https://en.wikipedia.org/wiki/Memory_model_(programming))
+
 访问模式对多路内存的性能影响重大
 
 CPU与DRAM的通信机制
