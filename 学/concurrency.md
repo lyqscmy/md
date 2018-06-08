@@ -1,5 +1,17 @@
 tag:concurrency|多线程
 
+# mutex
+- blocking
+- nonblocking
+mutual exclusion concurrency control policy
+> The problem which mutual exclusion addresses is a problem of resource sharing: how can a software system control multiple processes' access to a shared resource, when each process needs exclusive control of that resource while doing its work? 
+
+# condition variable
+
+> Conceptually a condition variable is a queue of threads, associated with a monitor, on which a thread may wait for some condition to become true.
+
+> As a design rule, multiple condition variables can be associated with the same mutex, but not vice versa.
+
 # book and sites
 http://www.1024cores.net/
 
@@ -24,6 +36,7 @@ http://www.1024cores.net/
 Erlang message passing
 go goroutine
 Scala actor
+
 
 # 并发的基本组件
 1. mutex

@@ -1,5 +1,27 @@
 tag:tensorflow
 
+# TODO
+## 编译环境
+bazel 0.12.0
+tensorflow 1.8.0
+
+查看动态库编译依赖
+查看编译选项，O3？-march=native？
+
+# C++ API + JNI
+- 从训练图中固化预测图
+- 加载图
+- 直接从java float array构造tensor避免数据拷贝?
+
+## C++ API
+inference 过程
+
+## benchmark
+array -> tensor
+tensor -> array
+inference
+
+
 # session
 [config](https://github.com/tensorflow/tensorflow/blob/r1.8/tensorflow/core/protobuf/config.proto)
 

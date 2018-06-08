@@ -44,11 +44,11 @@ scp  10.21.25.10:/home/developer/
 ## user and group
 
 useradd -m -G wheel liyongqiang
-usermod -aG wheel developer
+usermod -aG wheel lyq
 passwd liyongqiang
 gpasswd --add username group
 sudo chown -R xuxitao: /data/redis
-chmod -R g+rw /data/redis
+chmod -R g+rw /data
 
 == package
 yum clean all,yum makecache

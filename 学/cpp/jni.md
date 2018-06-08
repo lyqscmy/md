@@ -1,3 +1,5 @@
+tag:java|jni
+
 [Beautiful Native Libraries](http://lucumr.pocoo.org/2013/8/18/beautiful-native-libraries/)
 
 # 对象指针传递
