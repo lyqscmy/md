@@ -1,5 +1,22 @@
 tag:cpp
 
+# util
+
+noncopyable
+
+- RocksDB
+slice
+skiplist
+area
+
+- brpc
+bvar
+logstream
+flatmap
+doublebufferData
+area
+
+
 # c++ primer
 
 p204

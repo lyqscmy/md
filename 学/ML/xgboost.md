@@ -1,55 +1,46 @@
-# diff
-- Booster.java
-- XGBoostJNI.java
-- xgboost4j.h/xgboost4j.cpp
-- c_api.h/c_api.cc
+cmake .. -DUSE_OPENMP:BOOL=OFF -DPLUGIN_UPDATER_GPU:BOOL=OFF -DUSE_AZURE:BOOL=OFF -DUSE_HDFS:BOOL=OFF -DJVM_BINDINGS:BOOL=OFF
+cmake --build . --config relase
+# DMatrix
+## 预测阶段如何使用？
+- MetaInfo
+- DataIter<DType>
+- RowBatch
+- SimpleCSRSource
 
-- learner.cc/learner.cc
-- gbtree.cc
-- predictor.h/cpu_predictor.cpp
-    vivo_predictleaf
-
-
-
-# TODO
-二进制格式兼容加载模型
-提取所需信息
-
-
-
-[xgboost官方文档](https://xgboost.readthedocs.io/en/latest/model.html)
-
-[阿里杨军讲技术实现细节](https://www.zhihu.com/question/41354392/answer/124274741)
-
-# predictor
 ```cpp
-bst_float PredValue(const RowBatch::Inst& inst,
-                             const std::vector<std::unique_ptr<RegTree>>& trees,
-                             const std::vector<int>& tree_info, int bst_group,
-                             unsigned root_index, RegTree::FVec* p_feats,
-                             unsigned tree_begin, unsigned tree_end);
+const MetaInfo& info = p_fmat->info();
+dmlc::DataIter<RowBatch>* iter = p_fmat->RowIterator();
 ```
 
-# feat
 ```cpp
-feat.fvalue(split_index);
-feat.is_missing(split_index);
+ itr->BeforeFirst();
+ while (itr->Next()) {
+    const DType &batch = itr->Value();
+    // some computations
+ }
 ```
+## 如何创建？
 
-# Node
-```cpp
-is_leaf();
-split_index();
-split_cond();
-cdefault();
-cleft();
-cright();
-leaf_value();
-```
-
-# tree_model.h
+## handle
 
 ```cpp
-int RegTree::GetLeafIndex(const RegTree::FVec& feat, unsigned root_id);
-int GetNext(pid, feat.fvalue(split_index), feat.is_missing(split_index));
+DMatrixHandle result;
+jint ret = (jint) XGDMatrixCreateFromCSREx((size_t const *)indptr, (unsigned int const *)indices, (float const *)data, nindptr, nelem, jcol, &result);
+XGB_DLL int XGDMatrixCreateFromCSREx(const size_t* indptr,
+                                     const unsigned* indices,
+                                     const bst_float* data,
+                                     size_t nindptr,
+                                     size_t nelem,
+                                     size_t num_col,
+                                     DMatrixHandle* out)
+*out  = new std::shared_ptr<DMatrix>(DMatrix::Create(std::move(source)));
+
+XGB_DLL int XGBoosterPredict(BoosterHandle handle,
+                             DMatrixHandle dmat,
+                             int option_mask,
+                             unsigned ntree_limit,
+                             xgboost::bst_ulong *len,
+                             const bst_float **out_result)
+
+Booster *bst = static_cast<Booster*>(handle);
 ```

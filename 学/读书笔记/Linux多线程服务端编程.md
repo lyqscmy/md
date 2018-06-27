@@ -1,5 +1,8 @@
 tag:note|Linux多线程服务端编程
 
+# Reactor模式
+优先级反转
+阻塞敏感
 # 多线程服务编程模型
 one loop per thread
 background thread？

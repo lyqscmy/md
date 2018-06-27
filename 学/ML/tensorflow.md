@@ -34,6 +34,16 @@ Please specify optimization flags to use during compilation when bazel option "-
 # compile
 bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package
 
+bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
+
+sudo pip install /tmp/tensorflow_pkg/tensorflow-1.8.0-py2-none-any.whl
+
+```python
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
+```
 
 # ConfigProto
 

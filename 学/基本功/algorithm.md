@@ -1,26 +1,4 @@
-tag:algorithm|data structure
-
-# 数据结构
-[std::collections](https://doc.rust-lang.org/std/collections/index.html)
-- 数组
-- 链表
-- 栈
-- 队列
-- 堆
-- hashtable
-	- map
-	- set
-- 二叉树
-
-## 并发数据结构
-读写锁
-无锁
-
-- concurrentqueue
-M生产者N消费者
-- concurrenthashmap
-缓存
-- skiplist
+tag:algorithm|data structure|数据结构
 
 # 基本算法
 ## 排序
